@@ -3,27 +3,27 @@
 </template>
 
 <script lang="ts" setup>
-import IcaDataTable from "../components/IcaDataTable.vue";
-import { Header, Item } from "../../types/main";
+import IcaDataTable from '../components/IcaDataTable.vue';
+import { Header, Item } from '../../types/main';
 
 const headers: Header[] = [
   {
-    text: "Fruit",
-    value: "fruit",
+    text: 'Fruit',
+    value: 'fruit',
   },
   {
-    text: "Sales",
-    value: "sales",
+    text: 'Sales',
+    value: 'sales',
   },
 ];
 
 const items: Item[] = [
   {
-    fruit: "Tomato",
+    fruit: 'Tomato',
     sales: 30,
   },
   {
-    fruit: "Orange",
+    fruit: 'Orange',
     sales: 20,
   },
 ];

@@ -1,4 +1,4 @@
-import IcaDataTable from "./components/IcaDataTable.vue";
+import IcaDataTable from './components/IcaDataTable.vue';
 
 // /* tslint:disable */
 // if (typeof window !== "undefined" && window.Vue) {

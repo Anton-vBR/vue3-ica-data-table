@@ -1,7 +1,7 @@
 <template>
-  <ClientMode />
+  <ClientDev />
 </template>
 
 <script setup lang="ts">
-import ClientMode from "./dev/Client.vue";
+import ClientDev from './dev/ClientDev.vue';
 </script>
