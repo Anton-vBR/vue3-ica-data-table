@@ -2,14 +2,25 @@
   "name": "vue3-ica-data-table",
   "author": "anton-vbr",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Just another data table component for Vue3",
   "type": "module",
   "types": "./types/main.d.ts",
   "license": "MIT",
+  "files": [
+    "dist",
+    "types"
+  ],
   "homepage": "https://github.com/Anton-vBR/vue3-ica-data-table",
   "main": "./dist/vue3-ica-data-table.umd.js",
   "module": "./dist/vue3-ica-data-table.es.js",
+  "exports": {
+    ".": {
+      "types": "./types/main.d.ts",
+      "import": "./dist/vue3-ica-data-table.es.js",
+      "require": "./dist/vue3-ica-data-table.umd.js"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
