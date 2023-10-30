@@ -8,8 +8,8 @@
       </tr>
     </thead>
     <tbody>
-      <tr v-for="(row, index) in items" :key="`row ${index}`">
-        <td v-for="(header, index) in headers" :key="`header ${index}`">
+      <tr v-for="(row, rowIndex) in items" :key="`row ${rowIndex}`">
+        <td v-for="(header, headerIndex) in headers" :key="`header ${headerIndex}`">
           {{ row[header.value] }}
         </td>
       </tr>
@@ -18,9 +18,9 @@
 </template>
 
 <script lang="ts" setup>
-import type { Header, Item } from "../../types/main";
+import type { Header, Item } from '../../types/main';
 
-import { toRefs, PropType } from "vue";
+import { toRefs, PropType } from 'vue';
 
 const props = defineProps({
   items: {
@@ -29,13 +29,12 @@ const props = defineProps({
   },
   headers: {
     type: Array as PropType<Header[]>,
-
     required: true,
   },
   tableClass: {
     required: false,
     type: String,
-    default: "",
+    default: '',
   },
 });
 
